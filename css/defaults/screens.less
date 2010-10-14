@@ -1,0 +1,34 @@
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	
+	article {
+		.grid_span(8);/* make the article span the full 8 columns */
+		.grid_unshift(); /* we have to undo the shifting */
+		.grid_col_equal_remove(); /* remove the equal columns */
+	}
+	#sidebar-1 {
+		.grid_span(4); /* grow the sidebar to 4 columns */
+		.grid_unshift();
+		.grid_col_equal_remove();
+	}
+	#sidebar-2 {
+		.grid_span(4); /* as this one, this makes a cute 2 column layout */
+		.grid_col_equal_remove();	
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	article {
+		.grid_span(8);
+		.grid_unshift();
+		.grid_col_equal_remove();
+	}
+	#sidebar-1 {
+		.grid_span(8);
+		.grid_unshift();
+		.grid_col_equal_remove();
+	}
+	#sidebar-2 {
+		.grid_span(8);	
+		.grid_col_equal_remove();
+	}
+}

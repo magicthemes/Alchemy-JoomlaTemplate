@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die();
 // Include the Alchemy Framework core class
-require_once JPATH_ADMINISTRATOR.'/components/com_alchemy/framework.php';
+require_once JPATH_ADMINISTRATOR.'/components/com_alchemy/framework/initialize.php';
 // Start Alchemy based on the parameters passed.
 Alchemy::start($this);
 ?>
@@ -13,15 +13,13 @@ Alchemy::start($this);
 	?>
 </head>
 <body>
-	<div id="mt-messages">
-		<jdoc:include type="message" />
-	</div>
 	<div id="mt-template">
 		<header id="mt-template-header">
 			<jdoc:include type="modules" name="mt-nav" style="nav" />
 		</header>
 
 		<div id="mt-template-content">
+		    <jdoc:include type="message" />
 			<jdoc:include type="component" />
 		</div>
 
