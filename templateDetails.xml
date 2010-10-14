@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template" method="upgrade">
+	<name>mt_alchemy</name>
+	<creationDate>September 2010</creationDate>
+	<author>MagicThemes</author>
+	<authorEmail>support@magicthemes.com</authorEmail>
+	<authorUrl>http://magicthemes.com</authorUrl>
+	<copyright>Copyright 2010 MagicThemes. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>
+		<![CDATA[
+		<div id="magicthemes-installer-welcome" style="text-align:center;">
+			<br><br><br>
+			<h1>This Template Has Been Brought to you by: </h1><br> 
+			<a href="http://magicthemes.com" target="_new"><img src="../templates/mt_alchemy/images/magicthemes.png" alt="MagicThemes"></a>
+			<br><br>
+			<h3><a href="http://magicthemes.com" target="_new">MagicThemes.com</a> is a new Template Shop for Joomla that provides unique and creative Templates.</h3>
+			<h3> <a href="http://magicthemes.com" target="_new">Visit our website</a> to download more Free or Premium Templates.</h3>
+			<br><br>
+		</div>
+		]]>
+</description>
+
+	<files>
+		<filename>params.ini</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>component.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>default.less</filename>
+		<filename>index.php</filename>
+
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>flawless</folder>
+
+	</files>
+		<positions>
+		<position>mt-top</position>
+		<position>mt-header</position>
+		<position>mt-navigation</position>
+		<position>mt-banner</position>
+		<position>mt-search</position>
+		<position>mt-tabs</position>
+		<position>mt-footer</position>
+		<position>mt-logo</position>
+	</positions>
+	<params>
+		<param type="text" name="logo_title" default="Alchemy JoomlaBase" size="50" label="Logo Title" description="Text displayed as Tootip when the mouse is over the logo" />
+        <param type="radio" name="logo_istext" default="0" label="Use Text in Logo" description="Use text instead of the logo image. This may not look good!">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+        <param type="radio" name="development_mode" default="1" label="Development Mode" description="Use LessCSS for development. Useful when developing or modifying templates.">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+		<param type="radio" name="analytics_enabled" default="0" label="Enable Google Analytics" description="Enable Google Analytics">
+			<option value="0">Disable</option>
+			<option value="1">Enable</option>
+		</param>
+		<param type="text" name="analytics_id" default="" size="10" label="Google Analytics ID" description="Google Analytics ID for your website" />
+	</params>
+</install>
