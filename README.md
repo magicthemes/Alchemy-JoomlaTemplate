@@ -10,12 +10,17 @@ Technologies
 ============
 
 * Selected Parts of [HTML5BoilerPlate](http://github.com/paulirish/html5-boilerplate)
-* [Flaw{Less}](http://github.com/dominikGuzei/flawless.css) which includes
-	* [Modernizr](http://modernizr.com/) for detecting browser capabilities for granular styling and graceful degradation
-	* [PIE](http://css3pie.com/) for making Internet Explorer 6/7/8 render CSS3 stuff
-	* [LESS.js](http://github.com/cloudhead/less.js) - for leaner but very powerful CSS styling
-	* Very Flexible Grid System - no, it's not just 960gs. We can implement any kind of grid system using FlawLess's Grid
-	* Responsive Web Design - our designs can adopt to any screen size (particularly useful with mobile devices)
+* Selected Parts of [Flaw{Less}](http://github.com/dominikGuzei/flawless.css) (grids and some concepts are borrowed from Flawless)
+* [Modernizr](http://modernizr.com/) for detecting browser capabilities for granular styling and graceful degradation
+* [PIE](http://css3pie.com/) for making Internet Explorer 6/7/8 render CSS3 stuff
+* [LESS.js](http://github.com/cloudhead/less.js) - for leaner but very powerful CSS styling
+* [IE7-js](code.google.com/p/ie7-js/) for fixing IE quirks
+* [CSS Browser Selector](http://rafael.adm.br/css_browser_selector#contributors) for detecting and targeting specific browsers
+
+####Features####
+
+* Very Flexible Grid System - no, it's not just 960gs. We can implement any kind of grid system using FlawLess's Grid
+* Responsive Web Design through Media queries
 * Complete and semantically consistent HTML5 Joomla template overrides
 
 We will be adding more standard technologies like Gzip, Minifiers, Aggregators, etc as we go.
