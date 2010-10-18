@@ -41,7 +41,7 @@ defined('_JEXEC') or die('Restricted access');
 			<a class="tcLatestComment" href="<?php echo $commenter->latestCommentLink;?>">
 				<?php echo $commenter->latestCommentText; ?>
 			</a>
-			<time class="tcLatestCommentDate" datetime="<?php echo JHTML::_('date', $commenter->latestCommentDate, JText::_('DATE_FORMAT_JS1')) ?>"><?php echo JText::_('posted on'); ?> <?php echo JHTML::_('date', $commenter->latestCommentDate, JText::_('DATE_FORMAT_LC2')); ?></time>
+			<time class="tcLatestCommentDate"><?php echo JText::_('posted on'); ?> <?php echo JHTML::_('date', $commenter->latestCommentDate, JText::_('DATE_FORMAT_LC2')); ?></time>
 			<?php endif; ?>
 			
 			<div class="clr"></div>

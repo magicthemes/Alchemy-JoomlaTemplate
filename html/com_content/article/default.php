@@ -82,7 +82,7 @@ endif; ?>
 	<?php endif; ?>
 	
 	<?php if ($this->params->get('show_create_date')) : ?>
-	<time class="created_date" datetime="<?php echo JHTML::_('date', $this->article->created, JText::_('DATE_FORMAT_JS1')) ?>">
+	<time class="created_date">
 			<?php echo JHTML::_('date', $this->article->created, JText::_('DATE_FORMAT_LC2')) ?>
 	</time>
 	<?php endif; ?>
@@ -107,7 +107,7 @@ endif; ?>
 	</div>
 	
 	<?php if ( intval($this->article->modified) !=0 && $this->params->get('show_modify_date')) : ?>
-	<time class="modified_date" datetime="<?php echo JHTML::_('date', $this->article->modified, JText::_('DATE_FORMAT_JS1')); ?>">
+	<time class="modified_date">
 			<?php echo JText::sprintf('LAST_UPDATED2', JHTML::_('date', $this->article->modified, JText::_('DATE_FORMAT_LC2'))); ?>
 	</time>
 	<?php endif; ?>

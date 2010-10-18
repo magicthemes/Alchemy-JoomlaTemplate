@@ -42,7 +42,7 @@ defined('_JEXEC') or die('Restricted access');
 			<?php endif; ?>
 			
 			<?php if($params->get('commentDate')): ?>
-			<time class="lcCommentDate" datetime="<?php echo JHTML::_('date', $comment->commentDate, JText::_('DATE_FORMAT_JS1')) ?>">
+			<time class="lcCommentDate">
 				<?php if($params->get('commentDateFormat') == 'relative'): ?>
 				<?php echo $comment->commentDate;?>
 				<?php else:?>

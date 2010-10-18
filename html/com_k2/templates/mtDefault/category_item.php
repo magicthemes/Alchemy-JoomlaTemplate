@@ -36,7 +36,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->item->params)
 	<header class="itemHeader">
 		<?php if($this->item->params->get('catItemDateCreated')): ?>
 		<!-- Date created -->
-		<time class="itemDateCreated" datetime="<?php echo JHTML::_('date', $this->item->created, JText::_('DATE_FORMAT_JS1')) ?>">
+		<time class="itemDateCreated">
 			<?php echo JHTML::_('date', $this->item->created , JText::_('DATE_FORMAT_LC2')); ?>
 		</time>
 		<?php endif; ?>
@@ -267,7 +267,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->item->params)
 	<?php if($this->item->params->get('catItemDateModified')): ?>
 	<!-- Item date modified -->
 	<?php if($this->item->created != $this->item->modified): ?>
-	<time class="itemDateModified" datetime="<?php echo JHTML::_('date', $this->item->modified, JText::_('DATE_FORMAT_JS1')) ?>">
+	<time class="itemDateModified">
 		<?php echo JText::_('Last modified on'); ?> <?php echo JHTML::_('date', $this->item->modified, JText::_('DATE_FORMAT_LC2')); ?>
 	</time>
 	<?php endif; ?>

@@ -43,7 +43,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 		<?php endif; ?>
 
 		<?php if ($this->params->get('show_create_date')) : ?>
-			<time datetime="<?php echo JHTML::_( 'date', $item->created, JText::_('DATE_FORMAT_JS1'));?>" class="created_date">
+			<time>
 				<?php echo JText::_('Created') .': '.  JHTML::_( 'date', $item->created, JText::_('DATE_FORMAT_LC2')) ?>
 			</time>
 		<?php endif; ?>

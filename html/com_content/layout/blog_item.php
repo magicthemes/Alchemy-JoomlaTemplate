@@ -70,7 +70,7 @@ $canEdit	= ($this->user->authorize('com_content', 'edit', 'content', 'all') || $
 	<?php endif; ?>
 
 	<?php if ($this->item->params->get('show_create_date')) : ?>
-	<time class="created_date" datetime="<?php echo JHTML::_( 'date', $this->item->created, JText::_('DATE_FORMAT_JS1'));?>">
+	<time class="created_date">
 		<?php echo JHTML::_('date', $this->item->created, JText::_('DATE_FORMAT_LC2')); ?>
 	</time>
 	<?php endif; ?>

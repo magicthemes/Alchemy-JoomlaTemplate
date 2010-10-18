@@ -26,7 +26,7 @@
 			<dd>
 				<?php echo $result->text; ?>
 			<?php if ( $this->params->get( 'show_date' )) : ?>
-				<time class="create_date" datetime="<?php echo JHTML::_('date', $result->created, JText::_('DATE_FORMAT_JS1')) ?>">
+				<time class="create_date">
 					<?php echo $result->created; ?>
 				</time>
 			<?php endif; ?>

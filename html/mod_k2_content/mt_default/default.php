@@ -112,7 +112,7 @@ defined('_JEXEC') or die('Restricted access');
 			<?php echo $item->event->K2AfterDisplayContent; ?>
 
 			<?php if($params->get('itemDateCreated')): ?>
-			<time class="moduleItemDateCreated" datetime="<?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_JS1')) ?>"><?php echo JText::_('Written on') ;?> <?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC2')); ?></time>
+			<time class="moduleItemDateCreated"><?php echo JText::_('Written on') ;?> <?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_LC2')); ?></time>
 			<?php endif; ?>
 
 			<?php if($params->get('itemCategory')): ?>

@@ -36,7 +36,7 @@ defined('_JEXEC') or die('Restricted access');
 
 		<?php if($this->item->params->get('itemDateCreated')): ?>
 		<!-- Date created -->
-		<time class="itemDateCreated" datetime="<?php echo JHTML::_('date', $this->item->created, JText::_('DATE_FORMAT_JS1')) ?>">
+		<time class="itemDateCreated">
 			<?php echo JHTML::_('date', $this->item->created , JText::_('DATE_FORMAT_LC2')); ?>
 		</time>
 		<?php endif; ?>
@@ -545,7 +545,7 @@ defined('_JEXEC') or die('Restricted access');
 				<img src="<?php echo $comment->userImage; ?>" alt="<?php echo $comment->userName; ?>" width="<?php echo $this->item->params->get('commenterImgWidth'); ?>" />
 				<?php endif; ?>
 
-				<time class="commentDate" datetime="<?php echo JHTML::_('date', $comment->commentDate, JText::_('DATE_FORMAT_JS1')) ?>">
+				<time class="commentDate">
 				<?php echo JHTML::_('date', $comment->commentDate, JText::_('DATE_FORMAT_LC2')); ?>
 				</time>
 

@@ -112,7 +112,7 @@ $user = &JFactory::getUser();
 			<header class="itemHeader">
 				<?php if($item->params->get('userItemDateCreated')): ?>
 				<!-- Date created -->
-				<time class="itemDateCreated" datetime="<?php echo JHTML::_('date', $item->created, JText::_('DATE_FORMAT_JS1')) ?>">
+				<time class="itemDateCreated">
 					<?php echo JHTML::_('date', $item->created , JText::_('DATE_FORMAT_LC2')); ?>
 				</time>
 				<?php endif; ?>
